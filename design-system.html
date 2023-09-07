@@ -7,14 +7,17 @@
     <title>Design System</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.google.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="text-light">
-    <div class="container bg-dark">
-        <section class="grid" id="colors" style="padding: 2rem 2rem">
-            <h2><span style="margin-right: 5px">01</span>Colors</h2>
+<body>
+    <div class="container">
+        <h1 class="ff-sans-cond">Design System</h1>
+        <section class="grid" id="colors">
+            <h2 class="ff-sans-cond"><span style="margin-right: 5px">01</span>Colors</h2>
             <div class="flex">
                 <div class="grid" style="--gap: 0.2rem">
                     <div style="padding: 3rem 1rem 1rem; border: 1px solid white">
@@ -24,18 +27,68 @@
                     <p>230°, 35%, 7%</p>
                 </div>
                 <div class="grid" style="--gap: 0.2rem">
-                    <div class="bg-medium" style="padding: 3rem 1rem 1rem;">
+                    <div class="bg-accent" style="padding: 3rem 1rem 1rem;">
                         <span class="text-dark">#D0D6F9</span>
                     </div>
                     <p>RGB 11, 13, 23</p>
                     <p>230°, 35%, 7%</p>
                 </div>
                 <div class="grid" style="--gap: 0.2rem">
-                    <div class="bg-light" style="padding: 3rem 1rem 1rem;">
+                    <div class="bg-white" style="padding: 3rem 1rem 1rem;">
                         <span class="text-dark">#FFFFFF</span>
                     </div>
                     <p>RGB 11, 13, 23</p>
-                    <p >230°, 35%, 7%</p>
+                    <p>230°, 35%, 7%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography" style="margin: 4rem 0;">
+            <h2><span>02 </span>Typography</h2>
+            <div class="flex" style="--gap: 2.5rem">
+                <div style="flex-basis: 100;">
+                    <div>
+                        <p class="text-accent">Heading 1 - Bellafair Regular - 150px</p>
+                        <p class="fs-900 ff-serif uppercase">Earth</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 2 - Bellefair Regular - 100px</p>
+                        <p class="fs-800 ff-serif uppercase">Venus</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 3 - Bellefair Regular - 56px</p>
+                        <p class="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 4 - Bellefair Regular - 32px</p>
+                        <p class="fs-600 ff-serif uppercase">Uranus, Neptune & Pluto </p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 5 - Barlow Condensed - 28px</p>
+                        <p class="fs-500 ff-sans-cond uppercase">So, you want to travel to space?</p>
+                    </div>
+                </div>
+                <div style="flex-basis: 100;">
+                    <div>
+                        <p class="text-accent">Subheading 1 - Bellafair Regular - 28px</p>
+                        <p class="fs-500 ff-serif uppercase">384,400 km</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Subheading 2 - Barlow Condensed - 14px</p>
+                        <p class="fs-200 ff-serif uppercase">AVG. DISTANCE</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Nav text - Barlow Condensed - 14px</p>
+                        <p class="fs-300 ff-serif uppercase">EUROPA</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Body Text</p>
+                        <p class="fs-600 ff-serif uppercase">Uranus, Neptune & Pluto </p>
+                    </div>
+                    <div>
+                        <p class="text-accent">Heading 5 - Barlow Condensed - 28px</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. </p>
+                    </div>
                 </div>
             </div>
         </section>

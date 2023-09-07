@@ -4,16 +4,13 @@
 :root {
     /* color */
     --clr-dark: 230 35% 7%;
-    --clr-medium: 231 77% 90%;
-    --clr-light: 0 0% 100%;
-    --clr-text-light: #fff;
-    --clr-text-medium: #D0D6F9;
-    --clr-text-dark: #0B0D17;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100%;
     
     /* fonts */
     /* take pixel size and divide by 16 */
-    --fs-900: 9.375;
-    --fs-800: 6.25;
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
     --fs-700: 3.5rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
@@ -56,9 +53,23 @@ picture {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
 /* body setup */
 
 body {
+    font-family: var(--ff-sans-normal);
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white));
+    font-size: var(--fs-200);
     line-height: 1.5;
     min-height: 100vh;
 }
@@ -127,28 +138,50 @@ select {
     background-color: hsl(var(--clr-dark));
 }
 
-.bg-medium {
-    background-color: hsl(var(--clr-medium))
+.bg-accent {
+    background-color: hsl(var(--clr-accent))
 }
 
-.bg-light {
-    background-color: hsl(var(--clr-light))
+.bg-white {
+    background-color: hsl(var(--clr-white))
 }
 
 .text-dark {
-    color: var(--clr-text-dark);
+    color: hsl(var(--clr-dark));
 }
 
-.text-medium {
-    color: var(--clr-text-medium);
+.text-accent {
+    color: hsl(var(--clr-accent));
 }
 
-.text-light {
-    color: var(--clr-text-light)
+.text-white {
+    color: hsl(var(--clr-white))
 }
 
 
-/* components */
+/* typography */
+.ff-serif {font-family: var(--ff-serif);}
+.ff-sans-cond {font-family: var(--ff-sans-cond); }
+.ff-sans.normal {font-family: var(--ff-sans-normal); }
 
+.letter-spacing-1 {letter-spacing: 4.75px;}
+.letter-spacing-2 {letter-spacing: 2.7px;}
+.letter-spacing-3 {letter-spacing: 2.35px;}
 
+.uppercase {text-transform: uppercase; }
 
+.fs-900 {font-size: var(--fs-900);}
+.fs-800 {font-size: var(--fs-800);}
+.fs-700 {font-size: var(--fs-700);}
+.fs-600 {font-size: var(--fs-600);}
+.fs-500 {font-size: var(--fs-500);}
+.fs-400 {font-size: var(--fs-400);}
+.fs-300 {font-size: var(--fs-300);}
+.fs-200 {font-size: var(--fs-200);}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
